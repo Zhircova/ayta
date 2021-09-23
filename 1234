@@ -1,0 +1,4 @@
+require_once('Git.php');
+$repo=Git::open('/path/to/repo'); // -or- Git::create('/path/to/repo')
+$repo->commit('Some commit message');
+$repo->push('orgin','master');
